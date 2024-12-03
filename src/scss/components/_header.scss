@@ -1,0 +1,87 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-body);
+    z-index: var(--z-fixed);
+    transition: box-shadow var(--transition);
+}
+
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        font-family: var(--font-secondary);
+        color: var(--color-title);
+        cursor: pointer;
+
+        & img {
+            width: 20px;
+        }
+
+        & div {
+            background-color: var(--color-first);
+            padding: 6px;
+            border-radius: 0.5rem;
+        }
+    }
+
+    &__toggle,
+    &__close {
+        display: flex;
+        font-size: 1.5rem;
+        color: var(--color-title);
+        cursor: pointer;
+    }
+
+    &__list {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    &__link {
+        position: relative;
+        color: var(--color-title);
+        font-family: var(--font-secondary);
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: var(--color-first);
+            position: absolute;
+            left: 0;
+            bottom: -0.5rem;
+            transition: width var(--transition);
+        }
+
+        &:hover::after {
+            width: 60%;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+}
+
+.shadow-header {
+    box-shadow: 0 4px 16px hsla(22, 100%, 8%, 0.1);
+}
+
+.active-link::after {
+    width: 60%;
+}

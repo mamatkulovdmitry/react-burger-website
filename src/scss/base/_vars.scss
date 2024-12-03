@@ -1,0 +1,41 @@
+:root {
+    // Container sizes
+    --container-width-lg: 1120px;
+    --header-height: 3.5rem;
+
+    // Colors
+    --color-first: hsl(45, 99%, 55%);
+    --color-first-alt: hsl(45, 99%, 48%);
+    --color-second: hsl(22, 100%, 8%);
+    --color-white: hsl(34, 100%, 96%);
+    --color-title: hsl(22, 100%, 8%);
+    --color-text: hsl(22, 24%, 32%);
+    --color-text-light: hsl(23, 16%, 40%);
+    --color-body: hsl(34, 100%, 92%);
+    --color-body-alt: hsl(34, 100%, 88%);
+    --color-container: hsl(34, 100%, 96%);
+    --shadow-small-image: drop-shadow(0 4px 16px hsla(22, 100%, 8%, 0.2));
+    --shadow-big-image: drop-shadow(0 8px 24px hsla(22, 100%, 8%, 0.2));
+
+    // Font & typography
+    --font-main: "Montserrat", sans-serif;
+    --font-secondary: "Aclonica", sans-serif;
+    --font-size-biggest: 3rem;
+    --font-size-h1: 1.5rem;
+    --font-size-h2: 1.25rem;
+    --font-size-h3: 1rem;
+    --font-size-normal: 0.938rem;
+    --font-size-small: 0.813rem;
+
+    // Font weight
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    // Z index
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    // Transition
+    --transition: 400ms;
+}
